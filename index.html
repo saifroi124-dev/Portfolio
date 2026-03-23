@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="محمد - مصمم و مطور مواقع ويب محترف من تونس. تصميم مواقع، تطبيقات موبايل، لوحات تحكم، و هوية بصرية.">
+    <title>محمد | مصمم و مطور ويب - Portfolio</title>
+    <!-- Google Fonts - Arabic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========================================
+         HEADER / التنقل
+    ======================================== -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <!-- اللوقو -->
+                <a href="#" class="nav__logo">
+                    <span class="logo-icon">&#9670;</span> محمد.ديف
+                </a>
+
+                <!-- زر القائمة للموبايل -->
+                <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+
+                <!-- روابط التنقل -->
+                <ul class="nav__menu" id="navMenu">
+                    <li><a href="#home" class="nav__link active">الرئيسية</a></li>
+                    <li><a href="#services" class="nav__link">خدماتي</a></li>
+                    <li><a href="#portfolio" class="nav__link">أعمالي</a></li>
+                    <li><a href="#about" class="nav__link">علاش أنا</a></li>
+                    <li><a href="#contact" class="nav__link nav__link--cta">تواصل معايا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========================================
+         قسم الترحيب - HERO
+    ======================================== -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero__grid">
+                <!-- المحتوى -->
+                <div class="hero__content" data-animate="fade-right">
+                    <p class="hero__greeting">أهلا، أنا محمد 👋</p>
+                    <h1 class="hero__title">
+                        مصمم و مطور<br>
+                        <span class="hero__title--highlight">مواقع ويب.</span>
+                    </h1>
+                    <p class="hero__description">
+                        عمري 23 سنة، من تونس 🇹🇳. نحب نخدم حاجات تشد العين وتخدم مزيان. 
+                        كان عندك فكرة ولا مشروع، أنا هوني باش نحولهالك لواقع رقمي يجيب النتيجة.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#portfolio" class="btn btn--primary">شوف أعمالي</a>
+                        <a href="#contact" class="btn btn--secondary">أطلب موقعك</a>
+                    </div>
+                </div>
+                <!-- الصورة -->
+                <div class="hero__image" data-animate="fade-left">
+                    <div class="hero__image-wrapper">
+                        <img src="images/hero-portrait.png" alt="محمد - مصمم ويب تونسي" loading="eager">
+                        <div class="hero__image-blob"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الإحصائيات -->
+            <div class="hero__stats">
+                <div class="stat" data-animate="fade-up" data-delay="100">
+                    <span class="stat__number" data-count="120">0</span><span class="stat__plus">+</span>
+                    <span class="stat__label">مشروع مكمّل</span>
+                </div>
+                <div class="stat" data-animate="fade-up" data-delay="200">
+                    <span class="stat__number" data-count="35">0</span><span class="stat__plus">+</span>
+                    <span class="stat__label">عميل راضي</span>
+                </div>
+                <div class="stat" data-animate="fade-up" data-delay="300">
+                    <span class="stat__number" data-count="3">0</span><span class="stat__plus">+</span>
+                    <span class="stat__label">سنين خبرة</span>
+                </div>
+                <div class="stat" data-animate="fade-up" data-delay="400">
+                    <span class="stat__number" data-count="10">0</span><span class="stat__plus">+</span>
+                    <span class="stat__label">تقنية متعلّمها</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         صور المشاريع
+    ======================================== -->
+    <section class="projects-gallery">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="section-title">
+                    صور <span class="highlight">المشاريع</span>
+                </h2>
+                <p class="section-subtitle">
+                    نماذج حية من أعمالي. كل صورة تحكي قصة مشروع خدمتو بالقلب والإتقان.
+                </p>
+            </div>
+
+            <div class="projects-gallery__grid">
+                <div class="gallery-item gallery-item--large" data-animate="fade-up" data-delay="100">
+                    <img src="images/portfolio-web.png" alt="تصميم موقع ويب عصري" loading="lazy">
+                    <div class="gallery-item__overlay">
+                        <span class="gallery-item__tag">موقع ويب</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-animate="fade-up" data-delay="200">
+                    <img src="images/portfolio-dashboard.png" alt="لوحة تحكم ذكية" loading="lazy">
+                    <div class="gallery-item__overlay">
+                        <span class="gallery-item__tag">داشبورد</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-animate="fade-up" data-delay="300">
+                    <img src="images/portfolio-mobile.png" alt="تطبيق موبايل" loading="lazy">
+                    <div class="gallery-item__overlay">
+                        <span class="gallery-item__tag">تطبيق موبايل</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-animate="fade-up" data-delay="400">
+                    <img src="images/portfolio-branding.png" alt="هوية بصرية" loading="lazy">
+                    <div class="gallery-item__overlay">
+                        <span class="gallery-item__tag">هوية بصرية</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         خدماتي الأساسية
+    ======================================== -->
+    <section class="services-cards" id="services">
+        <div class="container">
+            <div class="services-cards__grid">
+                <!-- كارت 1: تصميم مواقع -->
+                <div class="service-card" data-animate="fade-up" data-delay="100">
+                    <div class="service-card__icon service-card__icon--orange">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <h3 class="service-card__title">تصميم مواقع ويب</h3>
+                    <p class="service-card__text">نصمّملك موقع عصري، سريع، ومتجاوب مع كل الأجهزة. من الفكرة للنتيجة، تصميم يشد العين ويخدم بالباهي.</p>
+                    <a href="#" class="service-card__link">اعرف أكثر &larr;</a>
+                </div>
+
+                <!-- كارت 2: لوحات التحكم -->
+                <div class="service-card" data-animate="fade-up" data-delay="200">
+                    <div class="service-card__icon service-card__icon--teal">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                    </div>
+                    <h3 class="service-card__title">لوحات تحكم (Dashboard)</h3>
+                    <p class="service-card__text">نبنيلك داشبورد واضح وسهل الاستعمال. تشوف الأرقام والبيانات متاعك بنظرة وحدة، من غير تعقيد.</p>
+                    <a href="#" class="service-card__link">اعرف أكثر &larr;</a>
+                </div>
+
+                <!-- كارت 3: تطبيقات الموبايل -->
+                <div class="service-card" data-animate="fade-up" data-delay="300">
+                    <div class="service-card__icon service-card__icon--dark">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                    </div>
+                    <h3 class="service-card__title">تصميم تطبيقات موبايل</h3>
+                    <p class="service-card__text">تصميم تطبيقات للتليفون بواجهة سلسة وجميلة. سواء Android ولا iOS، التجربة تكون ممتازة.</p>
+                    <a href="#" class="service-card__link">اعرف أكثر &larr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         علاش تختارني؟
+    ======================================== -->
+    <section class="why-hire" id="about">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="section-title">
+                    علاش تختارني <span class="highlight">لمشروعك الجاي؟</span>
+                </h2>
+                <p class="section-subtitle">
+                    ماهوش غير تصميم، هذا شغل بالقلب. نحط روحي فكل بيكسل باش نوصّل رسالتك بأحسن طريقة.
+                </p>
+            </div>
+
+            <div class="why-hire__grid">
+                <!-- هوية بصرية -->
+                <div class="hire-card" data-animate="fade-up" data-delay="100">
+                    <div class="hire-card__icon hire-card__icon--orange">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+                    </div>
+                    <div class="hire-card__content">
+                        <h3>هوية بصرية كاملة</h3>
+                        <p>نبنيلك براند يعبّر عليك. لوقو، ألوان، وستيل يخلّي الناس تعرفك من بعيد ويبقى فالبال.</p>
+                    </div>
+                </div>
+
+                <!-- تصميم منتجات -->
+                <div class="hire-card" data-animate="fade-up" data-delay="200">
+                    <div class="hire-card__icon hire-card__icon--teal">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                    </div>
+                    <div class="hire-card__content">
+                        <h3>تصميم منتجات رقمية</h3>
+                        <p>من الفكرة الأولى حتى ما يولّي المنتج جاهز. نفكّر معاك، نصمّم، ونتأكّد إلي كل شي يمشي مزيان.</p>
+                    </div>
+                </div>
+
+                <!-- تصميم غرافيك -->
+                <div class="hire-card" data-animate="fade-up" data-delay="300">
+                    <div class="hire-card__icon hire-card__icon--green">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <div class="hire-card__content">
+                        <h3>تصميم غرافيك</h3>
+                        <p>بوستات سوشيال ميديا، فلايرات، بانيرات... كل ما يلزمك باش تبان بروفيشنال ويشدّ الناس.</p>
+                    </div>
+                </div>
+
+                <!-- ماكيت و بروتوتايب -->
+                <div class="hire-card" data-animate="fade-up" data-delay="400">
+                    <div class="hire-card__icon hire-card__icon--coral">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <div class="hire-card__content">
+                        <h3>ماكيت و بروتوتايب</h3>
+                        <p>قبل ما نبدا الكوديج، نوريلك كيفاش باش يبان الموقع بالضبط. تشوف، تعلّق، و نبدّلو قبل ما نبرمجو.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         خدماتي بالتفصيل
+    ======================================== -->
+    <section class="awesome-services">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="section-title">
+                    خدمات <span class="highlight">مفصّلة ليك</span>
+                </h2>
+                <p class="section-subtitle">
+                    كل خدمة مدروسة باش تجاوب على احتياجاتك بالضبط. ماهيش خدمة عامة، هي حلول على المقاس.
+                </p>
+            </div>
+
+            <div class="awesome-services__grid">
+                <!-- خدمة 1 -->
+                <div class="awesome-card" data-animate="fade-up" data-delay="100">
+                    <div class="awesome-card__number">01</div>
+                    <h3 class="awesome-card__title">استراتيجية البراند</h3>
+                    <p class="awesome-card__text">
+                    </p>
+                    <a href="#" class="awesome-card__link">
+                        <span>اقرأ أكثر</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 5 5 12 12 19"/></svg>
+                    </a>
+                </div>
+
+                <!-- خدمة 2 -->
+                <div class="awesome-card" data-animate="fade-up" data-delay="200">
+                    <div class="awesome-card__number">02</div>
+                    <h3 class="awesome-card__title">تصميم مواقع ويب</h3>
+                    <p class="awesome-card__text">
+                        موقعك هو واجهتك الرقمية. نخدمو بأحدث التقنيات باش يكون سريع، جميل، ومتوافق مع كل شاشة.
+                    </p>
+                    <a href="#" class="awesome-card__link">
+                        <span>اقرأ أكثر</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 5 5 12 12 19"/></svg>
+                    </a>
+                </div>
+
+                <!-- خدمة 3 -->
+                <div class="awesome-card" data-animate="fade-up" data-delay="300">
+                    <div class="awesome-card__number">03</div>
+                    <h3 class="awesome-card__title">تصميم التطبيقات</h3>
+                    <p class="awesome-card__text">
+                        واجهات موبايل ناعمة وسلسة. نصمّم تجربة تخلّي المستخدم يحب يرجع للتطبيق كل يوم.
+                    </p>
+                    <a href="#" class="awesome-card__link">
+                        <span>اقرأ أكثر</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 5 5 12 12 19"/></svg>
+                    </a>
+                </div>
+
+                <!-- خدمة 4 -->
+                <div class="awesome-card" data-animate="fade-up" data-delay="400">
+                    <div class="awesome-card__number">04</div>
+                    <h3 class="awesome-card__title">تجربة المستخدم UI/UX</h3>
+                    <p class="awesome-card__text">
+                        الزائر يلزمو يلقى اللي يحبّو بسرعة. نخدم على تجربة واضحة، مريحة، وتخلّي كل كليك عندو معنى.
+                    </p>
+                    <a href="#" class="awesome-card__link">
+                        <span>اقرأ أكثر</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 5 5 12 12 19"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         أعمالي - PORTFOLIO
+    ======================================== -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="section-title">
+                    آخر <span class="highlight">أعمالي</span>
+                </h2>
+                <p class="section-subtitle">
+                    هاذي مجموعة من الأعمال اللي خدمتها. كل مشروع فيه قصة وفيه تحدّي، وأنا نحب هالشي.
+                </p>
+            </div>
+
+            <!-- فيلتر الأعمال -->
+            <div class="portfolio__filter" data-animate="fade-up">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="web">مواقع ويب</button>
+                <button class="filter-btn" data-filter="app">تطبيقات</button>
+                <button class="filter-btn" data-filter="branding">هوية بصرية</button>
+            </div>
+
+            <!-- شبكة الأعمال -->
+            <div class="portfolio__grid">
+                <!-- عمل 1 -->
+                <div class="portfolio-item" data-category="web" data-animate="fade-up" data-delay="100">
+                    <div class="portfolio-item__image">
+                        <img src="images/portfolio-web.png" alt="تصميم موقع ويب عصري" loading="lazy">
+                        <div class="portfolio-item__overlay">
+                            <a href="#" class="portfolio-item__btn">شوف المشروع</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item__info">
+                        <h4>موقع ويب عصري</h4>
+                        <p>تصميم مواقع</p>
+                    </div>
+                </div>
+
+                <!-- عمل 2 -->
+                <div class="portfolio-item" data-category="web" data-animate="fade-up" data-delay="200">
+                    <div class="portfolio-item__image">
+                        <img src="images/portfolio-dashboard.png" alt="لوحة تحكم تحليلية" loading="lazy">
+                        <div class="portfolio-item__overlay">
+                            <a href="#" class="portfolio-item__btn">شوف المشروع</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item__info">
+                        <h4>لوحة تحكم ذكية</h4>
+                        <p>داشبورد</p>
+                    </div>
+                </div>
+
+                <!-- عمل 3 -->
+                <div class="portfolio-item" data-category="app" data-animate="fade-up" data-delay="300">
+                    <div class="portfolio-item__image">
+                        <img src="images/portfolio-mobile.png" alt="واجهة تطبيق موبايل" loading="lazy">
+                        <div class="portfolio-item__overlay">
+                            <a href="#" class="portfolio-item__btn">شوف المشروع</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item__info">
+                        <h4>تطبيق موبايل</h4>
+                        <p>تصميم تطبيقات</p>
+                    </div>
+                </div>
+
+                <!-- عمل 4 -->
+                <div class="portfolio-item" data-category="branding" data-animate="fade-up" data-delay="400">
+                    <div class="portfolio-item__image">
+                        <img src="images/portfolio-branding.png" alt="هوية بصرية كاملة" loading="lazy">
+                        <div class="portfolio-item__overlay">
+                            <a href="#" class="portfolio-item__btn">شوف المشروع</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item__info">
+                        <h4>هوية بصرية كاملة</h4>
+                        <p>براندينغ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         دعوة للتعاون - CTA
+    ======================================== -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <div class="cta__content" data-animate="fade-up">
+                <h2 class="cta__title">عندك فكرة مشروع؟ <span class="highlight">يلّا نخدموها مع بعض!</span></h2>
+                <p class="cta__text">
+                    ما تسنّاش، ابعثلي مسج و نحكيو. سواء عندك مشروع كامل ولا غير فكرة في بالك، أنا هوني باش نعاونك.
+                </p>
+                <div class="cta__buttons">
+                    <a href="mailto:mohamed@example.com" class="btn btn--primary btn--lg">ابعثلي مسج</a>
+                    <a href="#portfolio" class="btn btn--outline btn--lg">شوف أعمالي</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         الفوتر
+    ======================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <!-- البراند -->
+                <div class="footer__brand">
+                    <a href="#" class="nav__logo nav__logo--light">
+                        <span class="logo-icon">&#9670;</span> محمد.ديف
+                    </a>
+                    <p class="footer__desc">
+                        مصمم و مطور ويب تونسي. نحب نصنع تجارب رقمية تخلّي الناس تتفاعل وتحب اللي تشوف. خلّينا نتعاونو!
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- روابط سريعة -->
+                <div class="footer__links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#services">خدماتي</a></li>
+                        <li><a href="#portfolio">أعمالي</a></li>
+                        <li><a href="#about">علاش أنا</a></li>
+                        <li><a href="#contact">تواصل معايا</a></li>
+                    </ul>
+                </div>
+
+                <!-- الخدمات -->
+                <div class="footer__links">
+                    <h4>الخدمات</h4>
+                    <ul>
+                        <li><a href="#">تصميم مواقع</a></li>
+                        <li><a href="#">تطبيقات موبايل</a></li>
+                        <li><a href="#">داشبورد</a></li>
+                        <li><a href="#">هوية بصرية</a></li>
+                        <li><a href="#">UI/UX</a></li>
+                    </ul>
+                </div>
+
+                <!-- التواصل -->
+                <div class="footer__links">
+                    <h4>تواصل معايا</h4>
+                    <ul>
+                        <li><a href="mailto:mohamed@example.com">mohamed@example.com</a></li>
+                        <li><a href="tel:+21612345678">+216 12 345 678</a></li>
+                        <li><span>تونس 🇹🇳</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- أسفل الفوتر -->
+            <div class="footer__bottom">
+                <p>&copy; 2026 محمد.ديف - كل الحقوق محفوظة.</p>
+                <div class="footer__bottom-links">
+                    <a href="#">سياسة الخصوصية</a>
+                    <a href="#">الشروط والأحكام</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- زر الرجوع للفوق -->
+    <button class="back-to-top" id="backToTop" aria-label="ارجع للفوق">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
